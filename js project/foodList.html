@@ -1,17 +1,21 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Food List</title>
+  <title>Food Menu</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>All Food Items</h2>
-    <div id="foodList"></div>
+  <header class="header">
+    <h1>🍴 Our Menu</h1>
+    <button onclick="goBack()" class="btn">➕ Add New Food</button>
+  </header>
 
-    <button onclick="goBack()">➕ Add More Food</button>
-  </div>
+  <main class="menu-container">
+    <div id="foodGrid" class="grid"></div>
+  </main>
 
   <script src="view.js"></script>
 </body>
